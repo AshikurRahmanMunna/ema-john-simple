@@ -1,0 +1,26 @@
+.cart-btn-bottom {
+    border: none;
+    outline: none;
+    background: #ff9900;
+    border-radius: 4px;
+    padding: 10px 30px;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+}
+.clear-cart {
+    border: none;
+    outline: none;
+    background: #FF3030;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 10px 30px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}
+.cart {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
