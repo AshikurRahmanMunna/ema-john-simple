@@ -29,7 +29,7 @@ const ShipMent = () => {
   return (
     <div className="form-container">
       <div>
-        <h2 className="form-title">Sign Up</h2>
+        <h2 className="form-title">Your Shipping Info</h2>
         <form onSubmit={handleCreateUser}>
           <div className="input-group">
             <label htmlFor="name">Your Name</label>
