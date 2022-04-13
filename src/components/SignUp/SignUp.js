@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./SignUp.css";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword, useSignInWithFacebook, useSignInWithGoogle } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState("");
+  const [signInWithGoogle] = useSignInWithGoogle(auth);
+  const [signInWithFacebook] = useSignInWithFacebook(auth);
   const navigate = useNavigate();
 
   const [createUserWithEmailAndPassword, user] =
@@ -39,13 +43,19 @@ const SignUp = () => {
     }
     createUserWithEmailAndPassword(email, password);
   };
+  const handleGoogleSignIn = () => {
+    signInWithGoogle();
+  }
+  const handleFacebookSignIn = () => {
+    signInWithFacebook();
+  }
 
   return (
-    <div className="form-container">
+    <div className="custom-form-container">
       <div>
-        <h2 className="form-title">Sign Up</h2>
+        <h2 className="custom-form-title">Sign Up</h2>
         <form onSubmit={handleCreateUser}>
-          <div className="input-group">
+          <div className="custom-input-group">
             <label htmlFor="email">Email</label>
             <input
               onBlur={handleEmailBlur}
@@ -55,7 +65,7 @@ const SignUp = () => {
               required
             />
           </div>
-          <div className="input-group">
+          <div className="custom-input-group">
             <label htmlFor="password">Password</label>
             <input
               onBlur={handlePasswordBlur}
@@ -65,7 +75,7 @@ const SignUp = () => {
               required
             />
           </div>
-          <div className="input-group">
+          <div className="custom-input-group">
             <label htmlFor="confirm-password">Confirm Password</label>
             <input
               onBlur={handleConfirmPasswordBlur}
@@ -75,20 +85,30 @@ const SignUp = () => {
               required
             />
           </div>
-          <input className="form-submit" type="submit" value="Sign Up" />
-          <p className="form-text">
+          <input className="custom-form-submit" type="submit" value="Sign Up" />
+          <p className="custom-form-text">
             Already Have An Account?{" "}
-            <Link className="form-link" to="/login">
+            <Link className="custom-form-link" to="/login">
               Log In
             </Link>
           </p>
-          <p className="form-error">{error}</p>
-          <div className="form-or">
-            <div></div>
-            <p>Or</p>
-            <div></div>
-          </div>
+          <p className="custom-form-error">{error}</p>
         </form>
+        <div className="custom-form-or">
+          <div></div>
+          <p>Or</p>
+          <div></div>
+        </div>
+        <div className="other-sign-in-container">
+          <button onClick={handleGoogleSignIn} className="other-sign-in">
+            <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon> Sign In With
+            Google
+          </button>
+          <button onClick={handleFacebookSignIn} className="other-sign-in">
+            <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon> Sign In With
+            Facebook
+          </button>
+        </div>
       </div>
     </div>
   );

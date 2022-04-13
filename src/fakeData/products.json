@@ -1,7 +1,7 @@
 [
   {
     "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
-    "category": "Men's Sneaker",
+    "category": "Borak",
     "name": "ULTRABOOST 22 SHOES",
     "seller": "Addidas",
     "price": 420,
@@ -14,7 +14,7 @@
   },
   {
     "id": "13cbc7ed-a61b-4883-9d42-82d7d8642b86",
-    "category": "Men's Sneaker",
+    "category": "H-Power",
     "name": "LUNAR NEW YEAR ULTRABOOST DNA SHOES",
     "seller": "Addidas",
     "price": 196,
@@ -40,7 +40,7 @@
   },
   {
     "id": "4bf9798f-63bc-4a83-b0c6-6a3b816fe922",
-    "category": "Men's Sneaker",
+    "category": "Borak",
     "name": "LITE RACER ADAPT 3.0 SHOES",
     "seller": "Addidas",
     "price": 229,
@@ -66,7 +66,7 @@
   },
   {
     "id": "6e5593d3-557b-43cf-8dab-a5140faedfb0",
-    "category": "Men's Sneaker",
+    "category": "Borak",
     "name": "KAPTIR 2.0 SHOES",
     "seller": "Addidas",
     "price": 138,
@@ -105,7 +105,7 @@
   },
   {
     "id": "1564a06b-692f-4f2e-8413-9c8a1cc2da77",
-    "category": "Men's Sneaker",
+    "category": "Borak",
     "name": "NMD_R1 V2 SHOES",
     "seller": "Addidas",
     "price": 260,
@@ -118,7 +118,7 @@
   },
   {
     "id": "ac44095f-230e-4502-8816-dea3eaae8320",
-    "category": "Men's Sneaker",
+    "category": "Borak",
     "name": "NMD_R1 PRIMEBLUE SHOES",
     "seller": "Addidas",
     "price": 437,
@@ -144,7 +144,7 @@
   },
   {
     "id": "8a5b4a9c-76ea-4fbb-9c70-9548de4eab01",
-    "category": "Men's Pants",
+    "category": "Borak",
     "name": "TIRO 21 TRACK PANTS",
     "seller": "Addidas",
     "price": 109,
@@ -170,7 +170,7 @@
   },
   {
     "id": "e4220958-06d2-4d50-96fa-0163a563f43d",
-    "category": "Men's Pants",
+    "category": "Borak",
     "name": "TIRO 21 TRACK PANTS",
     "seller": "Addidas",
     "price": 148,
@@ -196,7 +196,7 @@
   },
   {
     "id": "dbf7ab3f-b383-4d95-8ab7-f55fcf6fa5f2",
-    "category": "Men's Pants",
+    "category": "Borak",
     "name": "TIRO PANTS BLACK GOLD",
     "seller": "Addidas",
     "price": 115,
@@ -235,7 +235,7 @@
   },
   {
     "id": "c667d3ff-41eb-4cf7-a433-819d959ea768",
-    "category": "Men's Pants",
+    "category": "Borak",
     "name": "OPEN HEM 3-STRIPES TRACK PANTS",
     "seller": "Addidas",
     "price": 58,

@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header/Header";
 import Inventory from "./components/Inventory/Inventory";
 import Login from "./components/Login/Login";
@@ -8,6 +9,10 @@ import RequireAuth from "./components/RequireAuth/RequireAuth";
 import ShipMent from "./components/ShipMent/ShipMent";
 import Shop from "./components/Shop/Shop";
 import SignUp from "./components/SignUp/SignUp";
+import ThreeWheeler from "./components/ThreeWheeler/ThreeWheeler";
+import TwoWheeler from "./components/TwoWheeler/TwoWheeler";
+import Battery from "./components/Battery/Battery";
+import FourWheeler from "./components/FourWheeler/FourWheeler";
 
 function App() {
   return (
@@ -16,7 +21,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Shop></Shop>}></Route>
         <Route path="/shop" element={<Shop></Shop>}></Route>
-        <Route path="/orders" element={<Orders></Orders>}></Route>
+        <Route path="/cart" element={<Orders></Orders>}></Route>
+        <Route path="/threewheeler" element={<ThreeWheeler></ThreeWheeler>}></Route>
+        <Route path="/twowheeler" element={<TwoWheeler></TwoWheeler>}></Route>
+        <Route path="/battery" element={<Battery></Battery>}></Route>
+        <Route path="/fourWheeler" element={<FourWheeler></FourWheeler>}></Route>
         <Route
           path="/inventory"
           element={
